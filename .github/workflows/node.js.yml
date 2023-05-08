@@ -1,0 +1,35 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: CI
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.0
+      # Install dependencies
+      - run: npm install
+      # Delete separate tokens
+      #- run: rm -r \tokens
+      # Transform Figma Tokens JSON to something Style Dictionary can read
+      - run: npx token-transformer tokens.json tokens/colors.json base/colors
+      - run: npx token-transformer tokens.json tokens/radii.json base/radii
+      - run: npx token-transformer tokens.json tokens/shadows.json base/shadows
+      - run: npx token-transformer tokens.json tokens/dimension.json base/dimension
+      - run: npx token-transformer tokens.json tokens/typography.json base/typography
+      - run: npx token-transformer tokens.json tokens/high-contrast.json "themes/high contrast",base/colors base/colors
+      - run: npx token-transformer tokens.json tokens/dark.json themes/dark,base/colors base/colors
+      - run: npx token-transformer tokens.json tokens/light.json themes/light,base/colors base/colors
+      - run: npx token-transformer tokens.json tokens/theme.json semantic/theme,themes/light,base/shadows,base/colors themes/light,base/shadows,base/colors
+      - run: npx token-transformer tokens.json tokens/semantic-typography.json semantic/typography,base/typography base/typography
+      # Convert tokens according to Style Dictionary configs
+      - run: node build.js
+      # Add files that were created during a run, e.g. created files from style dictionary or token-transformer.
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update Tokens

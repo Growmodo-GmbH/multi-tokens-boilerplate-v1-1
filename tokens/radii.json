@@ -1,0 +1,37 @@
+{
+  "radii": {
+    "base": {
+      "value": 8,
+      "type": "other",
+      "description": "the base for our radii tokens"
+    },
+    "xs": {
+      "value": 4,
+      "type": "borderRadius"
+    },
+    "sm": {
+      "value": 8,
+      "type": "borderRadius"
+    },
+    "md": {
+      "value": 16,
+      "type": "borderRadius"
+    },
+    "lg": {
+      "value": 24,
+      "type": "borderRadius"
+    },
+    "xl": {
+      "value": 32,
+      "type": "borderRadius"
+    },
+    "2xl": {
+      "value": 40,
+      "type": "borderRadius"
+    },
+    "rounded": {
+      "value": 320,
+      "type": "borderRadius"
+    }
+  }
+}

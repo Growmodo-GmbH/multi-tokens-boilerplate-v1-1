@@ -1,0 +1,67 @@
+{
+  "spacing": {
+    "xxs": {
+      "value": 2,
+      "type": "spacing"
+    },
+    "xs": {
+      "value": 4,
+      "type": "spacing",
+      "description": "The base token for spacing"
+    },
+    "sm": {
+      "value": 8,
+      "type": "spacing"
+    },
+    "md": {
+      "value": 12,
+      "type": "spacing"
+    },
+    "lg": {
+      "value": 16,
+      "type": "spacing"
+    },
+    "xl": {
+      "value": 20,
+      "type": "spacing"
+    },
+    "2xl": {
+      "value": 24,
+      "type": "spacing"
+    },
+    "3xl": {
+      "value": 32,
+      "type": "spacing"
+    },
+    "4xl": {
+      "value": 64,
+      "type": "spacing"
+    },
+    "base": {
+      "value": 4,
+      "type": "scale"
+    }
+  },
+  "sizing": {
+    "xs": {
+      "value": 24,
+      "type": "sizing"
+    },
+    "sm": {
+      "value": 32,
+      "type": "sizing"
+    },
+    "md": {
+      "value": 40,
+      "type": "sizing"
+    },
+    "lg": {
+      "value": 48,
+      "type": "sizing"
+    },
+    "xl": {
+      "value": 64,
+      "type": "sizing"
+    }
+  }
+}

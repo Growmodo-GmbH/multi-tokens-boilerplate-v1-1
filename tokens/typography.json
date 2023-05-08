@@ -1,0 +1,158 @@
+{
+  "fontFamilies": {
+    "headlines": {
+      "value": "Inter",
+      "type": "fontFamilies"
+    },
+    "body": {
+      "value": "Inter",
+      "type": "fontFamilies"
+    }
+  },
+  "lineHeights": {
+    "headlines": {
+      "xl": {
+        "value": "110%",
+        "type": "lineHeights"
+      },
+      "lg": {
+        "value": "110%",
+        "type": "lineHeights"
+      },
+      "default": {
+        "value": "110%",
+        "type": "lineHeights"
+      },
+      "sm": {
+        "value": "130%",
+        "type": "lineHeights"
+      }
+    },
+    "body": {
+      "relaxed": {
+        "value": "175%",
+        "type": "lineHeights"
+      },
+      "default": {
+        "value": "150%",
+        "type": "lineHeights"
+      }
+    }
+  },
+  "fontWeights": {
+    "headlines": {
+      "bold": {
+        "value": "Bold",
+        "type": "fontWeights"
+      },
+      "regular": {
+        "value": "Regular",
+        "type": "fontWeights"
+      }
+    },
+    "body": {
+      "bold": {
+        "value": "Bold",
+        "type": "fontWeights"
+      },
+      "regular": {
+        "value": "Regular",
+        "type": "fontWeights"
+      }
+    }
+  },
+  "fontSize": {
+    "base": {
+      "value": 16,
+      "type": "scale"
+    },
+    "scale": {
+      "value": 1.2,
+      "type": "scale"
+    },
+    "xxs": {
+      "value": 9,
+      "type": "fontSizes"
+    },
+    "xs": {
+      "value": 11,
+      "type": "fontSizes"
+    },
+    "sm": {
+      "value": 13,
+      "type": "fontSizes"
+    },
+    "md": {
+      "value": 16,
+      "type": "fontSizes"
+    },
+    "lg": {
+      "value": 19,
+      "type": "fontSizes"
+    },
+    "xl": {
+      "value": 23,
+      "type": "fontSizes"
+    },
+    "2xl": {
+      "value": 28,
+      "type": "fontSizes"
+    },
+    "3xl": {
+      "value": 34,
+      "type": "fontSizes"
+    },
+    "4xl": {
+      "value": 41,
+      "type": "fontSizes"
+    },
+    "5xl": {
+      "value": 49,
+      "type": "fontSizes"
+    },
+    "6xl": {
+      "value": 59,
+      "type": "fontSizes"
+    },
+    "7xl": {
+      "value": 71,
+      "type": "fontSizes"
+    },
+    "8xl": {
+      "value": 85,
+      "type": "fontSizes"
+    },
+    "9xl": {
+      "value": 102,
+      "type": "fontSizes"
+    },
+    "10xl": {
+      "value": 122,
+      "type": "fontSizes"
+    }
+  },
+  "letterSpacing": {
+    "body": {
+      "value": "0%",
+      "type": "letterSpacing"
+    },
+    "headlines": {
+      "value": "-1%",
+      "type": "letterSpacing"
+    },
+    "buttons": {
+      "value": "3%",
+      "type": "letterSpacing"
+    },
+    "captions": {
+      "value": "0%",
+      "type": "letterSpacing"
+    }
+  },
+  "paragraphSpacing": {
+    "default": {
+      "value": 0,
+      "type": "paragraphSpacing"
+    }
+  }
+}
